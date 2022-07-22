@@ -1,7 +1,17 @@
-/*un import*/
-@import url(/scss/castrar.scss);
+@mixin primero {
 
-/*maps*/
+    width: 35%;
+ background-color:#EBBED8 ;
+ box-shadow: 6px 20px 10px black;
+}
+
+
+.adoptar {
+	@include primero;
+}
+.castrar {
+	@include primero;
+}
 $var:(
 	primary : beige,
 	secondary: pink, 
@@ -29,25 +39,6 @@ h1{
 	font-size: $h1;
 }
 
-
-/*aqui termina maps*/
-
-/* aqui empezamos em mixin */
-@mixin primero {
-
-    width: 35%;
- background-color:#EBBED8 ;
- box-shadow: 6px 20px 10px black;
-}
-
-
-.adoptar {
-	@include primero;
-}
-.castrar {
-	@include primero;
-}
-
 /*extends*/
 .button{
 	border: none;
@@ -61,29 +52,16 @@ h1{
 
 .verde {
 	@extend .button;
-	background-color: rgb(128, 63, 181);
+	background-color: rgb(95, 78, 109);
 }
 .violeta{
 	@extend .button ;
-	background-color: rgba(128, 63, 181);
+background-color: #9D8BDB
 }
 .amarillo {
 	@extend .button;
-	background-color: rgb(128, 63, 181);
+	background-color: rgb(133, 70, 184);
 }
-
-/*aqui editamos el index*/
-/* vamos a editar la pagina castrar*/
-/*aqui edito la pagina adoptar */
-/*contacto*/
-/*aqui hacemos el querie800pxx*/
-/*aqui editamos el index*/
-/*pagina adoptar*/
-/*castrar*/
-/*contacto*/
-/*aqui editamos la pagina contacto*/
-/*aqui empieza emedia querie de 380px*/
-/*aqui terminamos de editar el media querie*/
 body {
 	margin: auto;
 	background-color: beige;
@@ -188,15 +166,14 @@ input {
 }
 .adoptar {
 	&:hover {
-		background-size: 100%;
-		background-image: url(/imagenes/castrars\ \(2\).jpg);
-	}
+		}
+		
 }
 .castrar {
 	&:hover {
 		background-size: 100%;
 		background-clip: content-box;
-		background-image: url(/imagenes/castrars\ \(1\).jpg);
+	
 	}
 }
 .mapa {
@@ -580,7 +557,7 @@ label {
 		}
 		width: 100%;
 	}
-	*contacto*/ {
+	 
 		.conteiner1 {
 			margin: auto;
 			padding: auto;
@@ -607,7 +584,7 @@ label {
 			font-size: 20px;
 		}
 	}
-}
+
 @media only screen and (max-width:380px) {
 	.grid-conteiner-fluid {
 		width: 100%;
