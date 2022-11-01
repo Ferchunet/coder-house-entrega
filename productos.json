@@ -1,0 +1,26 @@
+[
+    {
+        "title": "pelela",
+        "price": 2500,
+        "thumbnail": "pelela.com",
+        "id": 1
+    },
+    {
+        "title": "juguete",
+        "price": 3000,
+        "thumbnail": "pelela.com",
+        "id": 2
+    },
+    {
+        "title": "andarin",
+        "price": 10.000,
+        "thumbnail": "pelela.com",
+        "id": 3
+    },
+    {
+        "title": "auto",
+        "price": 13.000,
+        "thumbnail": "auto.com",
+        "id": 4
+    }
+]
